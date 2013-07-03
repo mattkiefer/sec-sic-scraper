@@ -4,10 +4,15 @@ from bs4 import BeautifulSoup
 # where the data go
 outfile = 'sics.csv'
 w_outfile = open(outfile,'w')
+a_outfile = open(outfile,'w')
 csv_outfile = csv.writer(a_outfile)
 
 # wipe the file
 w_outfile.write('')
+
+# insert headers
+headers = ['company', 'CIK', 'SIC']
+csv_outfile.writerow(headers)
 
 def scrape_data():
     
