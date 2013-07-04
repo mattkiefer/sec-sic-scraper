@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 # where the data go
 outfile = 'sics.csv'
 w_outfile = open(outfile,'w')
-a_outfile = open(outfile,'w')
+a_outfile = open(outfile,'a')
 csv_outfile = csv.writer(a_outfile)
 
 # wipe the file
